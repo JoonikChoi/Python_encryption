@@ -1,7 +1,7 @@
-## Python_encryption
+# Python_encryption
 
 
-# Additional_Cipher.py
+## Additional_Cipher.py
 대칭 덧셈 암호 해독 프로그램 (통계 공격)
 가장 빈번히 나타나는 단어 5개를 각각 ‘E’로 변환한 결과를 출력하는 파이썬 프로그램
 
@@ -10,17 +10,17 @@ RVJZJSRJVUFERUVJZXEGIZETZGCVBEFNERJRJLSJKZKLKZFEGVIDLKRKZFE
 EVKNFIBREUZJVWWZTZVEKZESFKYJFWKNRIVREUYRIUNRIV
 
 
-# bitcoin_key_convert.py
+## bitcoin_key_convert.py
 
 비트코인의 개인키를 16진수로 입력받아, 공개키를 16진수로 출력하는 파이썬 프로그램
 
 비트코인의 공개 키는 아래와 같은 SECP256K1 타원 곡선을 이용
-	Y2 = (X3 + 7) % p
-	p = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F
+Y2 = (X3 + 7) % p
+p = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F
 
-	개인키가 x라고 하면 공개 키는 x * G의 결과로 생성되는데, G는 타원 곡선상의 고정된 점으로 좌표는 다음과 같다.
-	G = (0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798, 
-			0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8)
+개인키가 x라고 하면 공개 키는 x * G의 결과로 생성되는데, G는 타원 곡선상의 고정된 점으로 좌표는 다음과 같다.
+G = (0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798, 
+0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8)
 
 곱셈 역원 계산은 Extended Euclidian 알고리즘을 이용
 곱하기 연산은 double-and-add 알고리즘을 이용함.
